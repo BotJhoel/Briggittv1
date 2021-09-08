@@ -20,7 +20,7 @@ return `  ≡ *INFORMACION*
 ├╼ Versi Navegador: *${Lxa.browserDescription[2]}*
 ├╼ Velocidad : ${process.uptime()}
 ├╼ Tiempo Ejecucion : *${kyun(uptime)}*
-├╼ Grupo del Bot : https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
+├╼ Grupo del Bot : https://chat.whatsapp.com
 └─────────────
 ┌───⊷ *DISPOSITIVO* ⊶
 ├╼ Nombre : *${Lxa.user.name}*
@@ -30,7 +30,7 @@ return `  ≡ *INFORMACION*
 ├╼ Versi Navegador: *${Lxa.browserDescription[2]}*
 ├╼ Velocidad : ${process.uptime()}
 ├╼ Tiempo Ejecucion : *${kyun(uptime)}*
-├╼ Grupo del Bot : https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
+├╼ Grupo del Bot : https://chat.whatsapp.com
 ├╼ RAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ├╼ MCC : ${mcc}
 ├╼ MNC : ${mnc}
@@ -39,10 +39,10 @@ return `  ≡ *INFORMACION*
 
 
 ▢ Github :
-https://github.com/FG98F/fgbotv3
+https://github.com/BotJhoel/Briggittv1
 
 ▢ DEV :
-https://github.com/FG98F
+https://github.com/BotJhoel
 `
 }
 exports.info = info
