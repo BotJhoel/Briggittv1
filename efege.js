@@ -438,10 +438,10 @@ const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stic
 colors = ['red','white','black','blue','yellow','green']
 
 //--Consola de registro de chat privado
-if (!isGroup && isCmd) console.log(color('[FG98]','aqua'), "Pv", color(command, "blue"), "de", (sender.split('@')[0]),  args.length)
+if (!isGroup && isCmd) console.log(color('[Jhoel]','aqua'), "Pv", color(command, "blue"), "de", (sender.split('@')[0]),  args.length)
 			
 //--Consola de registro de grupo
-if (isGroup && isCmd) console.log(color('[FG98]','aqua'), "Gp", color(command, "green"), "de", (sender.split('@')[0]), "en", (groupName), args.length)
+if (isGroup && isCmd) console.log(color('[Jhoel]','aqua'), "Gp", color(command, "green"), "de", (sender.split('@')[0]), "en", (groupName), args.length)
 
 
 //----------- 𝗩𝗘𝗥 𝗖𝗔𝗥𝗔𝗖𝗧𝗘𝗥𝗜́𝗦𝗧𝗜𝗖𝗔𝗦---------
