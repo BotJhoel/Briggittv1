@@ -148,7 +148,7 @@ async function starts() {
 	fs.existsSync('./session/FG98.json') && Fg.loadAuthInfo('./session/FG98.json')
 Fg.on('connecting', () => {
         const time_connecting = moment.tz('America/La_Paz').format('HH:mm:ss')
-        console.log(color('[FG98]','aqua'), color("Espere a que se conecte...", "yellow"))
+        console.log(color('[Jhoel]','aqua'), color("Espere a que se conecte...", "yellow"))
     })
 Fg.on('open', () => {
         const time_connect = moment.tz('America/La_Paz').format('HH:mm:ss')
