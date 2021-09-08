@@ -105,7 +105,7 @@ const banned = [
  
 //número dueño del bot
 const ownerNumber = [
-  "59172945992@s.whatsapp.net",
+  "56994858890@s.whatsapp.net",
   ];
 
 //*********** 𝗔𝗣𝗜𝗞𝗘𝗬 ***********//
@@ -143,7 +143,7 @@ async function starts() {
 	const Fg = new WAConnection()
 	Fg.logger.level = 'warn'
 	Fg.on('qr', () => {
-		console.log(color('[FG98]','aqua'), color("Escanee el codigo QR para conectarse...", "yellow"))
+		console.log(color('[Jhoel]','aqua'), color("Escanee el codigo QR para conectarse...", "yellow"))
 	})
 	fs.existsSync('./session/FG98.json') && Fg.loadAuthInfo('./session/FG98.json')
 Fg.on('connecting', () => {
@@ -152,7 +152,7 @@ Fg.on('connecting', () => {
     })
 Fg.on('open', () => {
         const time_connect = moment.tz('America/La_Paz').format('HH:mm:ss')
-        console.log(color('[FG98]','aqua'), color(`Conectado`, "aqua"))
+        console.log(color('[Jhoel]','aqua'), color(`Conectado`, "aqua"))
         start('')
     })
 	await Fg.connect({timeoutMs: 30*1000})
