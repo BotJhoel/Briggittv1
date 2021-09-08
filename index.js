@@ -1,15 +1,15 @@
-console.log('A partir de...')
+console.log('Iniciando ...')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
 let package = JSON.parse(fs.readFileSync('./package.json'))
 const CFonts  = require('cfonts')
-CFonts.say('FG98', {
+CFonts.say('Jhoel', {
   font: 'pallet',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`DyLux By FG98 Ig : @fg98._`, {
+CFonts.say(`Briggitt By Jhoel Ig : en proceso...`, {
   font: 'console',
   align: 'center',
   colors: ['yellow']
