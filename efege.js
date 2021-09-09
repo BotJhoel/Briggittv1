@@ -2680,11 +2680,11 @@ break
 
 
 
-				default:
+	default:
 				//comando no registrado
 				
-				/ if (body.startsWith(`${prefix + command}`)) {
-  reply(`▢ Hola *${pushname}*\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n▋❦❱❦❯ 【✘】 *${prefix + command}* No está en mi lista de Menu\n▋❦❱🖊️ Escribe *${prefix}Help* para ver el Menu\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰`)
+				/*if (body.startsWith(`${prefix + command}`)) {
+  reply(`▢ Hola *${pushname}*\n┌──────────────\n├╼ 【✘】 *${prefix + command}* No está en mi lista de Menu\n├╼🖊️ Escribe *${prefix}Help* para ver el Menu\n└──────────────`)
 				}*/
 				
 
