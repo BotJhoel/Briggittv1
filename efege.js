@@ -2683,8 +2683,8 @@ break
 				default:
 				//comando no registrado
 				
-				/*if (body.startsWith(`${prefix + command}`)) {
-  reply(`▢ Hola *${pushname}*\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n▋❦❱❦❯ 【✘】 *${prefix + command}* No está en mi lista de Menu\n▋❦❱❦❯🖊️ Escribe *${prefix}Help* para ver el Menu\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰`)
+				/ if (body.startsWith(`${prefix + command}`)) {
+  reply(`▢ Hola *${pushname}*\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n▋❦❱❦❯ 【✘】 *${prefix + command}* No está en mi lista de Menu\n▋❦❱🖊️ Escribe *${prefix}Help* para ver el Menu\n✦▰▰▰▰▰▰▰▰▰▰▰▰▰▰`)
 				}*/
 				
 
@@ -2693,63 +2693,6 @@ break
 }
 starts()
 
-//nivel activar - desactivar
-case 'leveling':
-                if (!isGroup) return reply(mess.only.group)
-		     if (!isGroupAdmins) return reply(mess.only.admin)			
-                if (args.length < 1) return reply('activar oh desactivar')
-                if (args[0] === '1') {
-                if (isLevelingOn) return reply('*la función de nivel ha estado activa antes*')
-                 	   _leveling.push(from)
-                 	   fs.writeFileSync('./data/leveling.json', JSON.stringify(_leveling))
-                  	   reply(ind.lvlon())
-              	  } else if (args[0] === '0') {
-                  	  _leveling.splice(from, 1)
-                 	   fs.writeFileSync('./data/leveling.json', JSON.stringify(_leveling))
-                 	    reply(ind.lvloff())
-             	   } else {
-                 	   reply(ind.satukos())
-                	}
-				break 
- 
- //ver nivel
-case 'level':
-case 'nivel':
-case 'lvl':
-case 'level'
-                if (!isRegistered) return reply(ind.noregis())
-                if (!isLevelingOn) return reply(ind.lvlnoon())
-			     if (!isGroup) return reply(mess.only.group)			     
-                const userLevel = getLevelingLevel(sender)
-                const userXp = getLevelingXp(sender)
-                if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
-                const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
-                resul = `┏━━❉ ꧁𝙻𝙴𝚅𝙴𝙻꧂❉━━\n┣⊱ *Nombre* : ${pushname}\n┣⊱ Numero : wa.me/${sender.split("@")[0]}\n┣⊱ User XP :  ${userXp}/${requiredXp}\n┣⊱ User Level : ${userLevel}\n┗━━━━━━━━━━━━`
-                costum(resul, text, tescuk, per)
-				break
- 
-//funcion del nivel
-if (isGroup && isRegistered && isLevelingOn) {
-            const currentLevel = getLevelingLevel(sender)
-            const checkId = getLevelingId(sender)
-            try {
-                if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
-                const amountXp = Math.floor(Math.random() * 10) + 500
-                const requiredXp = 500 * (Math.pow(2, currentLevel) - 1)
-                const getLevel = getLevelingLevel(sender)
-                addLevelingXp(sender, amountXp)
-                if (requiredXp <= getLevelingXp(sender)) {
-                    addLevelingLevel(sender, 1)
-                    bayarLimit(sender, 3)
-                     addKoinUser(sender, 20)
-                    await reply(ind.levelup(pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, role))            
- 	               
- 	              
-	               
- 
-                  }
-            } catch (err) {
-                console.error(err)
-            }
-        }
+//próximamente...
+
          
