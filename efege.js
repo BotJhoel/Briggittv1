@@ -2285,7 +2285,7 @@ case 'fakedonald':
 case 'support':
  if (!isVerify) return reply(userB(prefix))
 
-      reply(`📌 *Grupo de soporte*\n\nhttps://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK`) 
+      reply(`📌 *Grupo de soporte*\n\nhttps://chat.whatsapp.com`) 
    break
    
    case 'topgay':
