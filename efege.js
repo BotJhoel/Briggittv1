@@ -2085,7 +2085,7 @@ case 'play':
 if (!isVerify) return reply(userB(prefix))
   if (isBanned) return reply(banf())
 
-  if (args.length < 1) return reply(`✰ *Ingresa el título de una canción*\n\n📌Ejemplo *${prefix + command}* Lil Peep broken smile`)
+  if (args.length < 1) return reply(`✳️ *Ingresa el título de una canción*\n\n📌Ejemplo *${prefix + command}* Lil Peep broken smile`)
   reply(wait())
             var srch = args.join('')
     		aramas = await yts(srch);
@@ -2108,7 +2108,6 @@ if (!isVerify) return reply(userB(prefix))
                         reply(mess.error.api) }
                         
                    break 
-
 //YouTube Descargas
   case 'ytmp3':
               if (!isVerify) return reply(userB(prefix))
