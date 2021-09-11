@@ -1333,7 +1333,7 @@ case 'creador':
 
     nomor = '56994858890@s.whatsapp.net'
     owner = await fs.readFileSync('./image/fg.jpeg').toString('base64')
-    capt = "Desarrollador\nOwner: ❦︎✞︎❦︎𝓳ꫝꪮꫀꪶ❦︎✞︎❦︎\nBOT : DyLux"
+    capt = "Desarrollador\nOwner: ꧁❦︎⃢⃝✞︎𝐉𝐡𝐨𝐞𝐥♡︎✞︎⃢⃝❦︎꧂\nBOT : DyLux"
     const been = {
     text: `【✔】 @${nomor.split("@")[0]} Aqui mi dueño, solo chatea si es necesario`,
   contextInfo: {
