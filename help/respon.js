@@ -27,7 +27,7 @@ const banf = () => {
 
 //--
 const ownerB = () => {
-  return '【✘】  Esta función es solo para *❦︎✞︎❦︎𝓳ꫝꪮꫀꪶ❦︎✞︎❦︎*'
+  return '【✘】  Esta función es solo para *꧁❦︎⃢⃝✞︎𝐉𝐡𝐨𝐞𝐥♡︎✞︎⃢⃝❦︎꧂*'
 }
 
 //--
