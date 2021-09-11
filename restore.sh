@@ -14,7 +14,7 @@ echo -e '\e[1;32m
 
 \e[0m'
 
-rm -r Samu330.json
+rm -r FG98.json
 
 sleep 2.0
 
