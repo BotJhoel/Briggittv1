@@ -2114,7 +2114,7 @@ if (!isVerify) return reply(userB(prefix))
   if (isBanned) return reply(banf()) 
          		  
 				  if (args.length < 1) return reply('*Ingrese el título*')
-                cnf.sendMessage(from, mess.wait, text,{quoted : freply})
+                Fg.sendMessage(from, mess.wait, text,{quoted : freply})
 				play = args.join(" ")
 				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
 				if (anu.error) return reply(anu.error)
