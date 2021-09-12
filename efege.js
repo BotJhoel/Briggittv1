@@ -2108,6 +2108,28 @@ if (!isVerify) return reply(userB(prefix))
                         reply(mess.error.api) }
                         
                    break 
+//-----playvideos
+case 'play3':  
+				if (isBanned) return  reply(mess.banned) 
+          
+if (!isVerify) return reply(userB(prefix))			  
+				  if (args.length < 1) return reply('*Ingrese el título*')
+                cnf.sendMessage(from, mess.wait, text,{quoted : freply})
+				play = args.join(" ")
+				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=oCHDwj8ggZGBGjU5WIaK5Rctu6c`)
+				if (anu.error) return reply(anu.error)
+				infomp3 = `❒════❬ *𝐏𝐋𝐀𝐘𝟐* ❭═════╾❒
+├‣ *Nombre* : ${anu.result.title}
+├‣ *Fuente* : ${anu.result.source}
+├‣ *Tamaño* : ${anu.result.size}
+❒═════════════════╾❒`			
+				buffer = await getBuffer(anu.result.thumbnail)
+				buffer1 = await getBuffer(anu.result.url_video)
+				cnf.sendMessage(from, buffer, image, {quoted: freply, caption: infomp3})
+				cnf.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: '꧁❦︎⃢⃝✞︎𝐉𝐡𝐨𝐞𝐥♡︎✞︎⃢⃝❦︎꧂'})
+					addFilter(from)
+          break 
+
 		
 //si el play falla
                   case 'play2':
